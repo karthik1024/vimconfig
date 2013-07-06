@@ -136,6 +136,6 @@ vnoremap <a-k> :m-2<cr>gv
 
 " colorscheme
 set t_co=256
-color mayansmoke 
+color solarized 
 " Ignore pep8 80 char limit rule
 let g:pymode_lint_ignore="E501"
