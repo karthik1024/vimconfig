@@ -104,11 +104,12 @@ syntax on
 set laststatus=2
 
 " settings for pyton-mode
-map <leader>g :call ropegotodefinition()<cr>
+map <leader>d :call ropegotodefinition()<cr>
 let ropevim_enable_shortcuts=1
 let g:pymode_rope_goto_def_newwin = "vnew"
-let g:pymode_rope_extended_complete = 1
+let g:pymode_rope = 0
 let g:pymode_syntax = 1
+let g:pymode_syntax_all = 1
 
 " Set gui font
 set guifont=Consolas\ for\ Powerline\ fixedD:h11
@@ -139,3 +140,6 @@ set t_co=256
 color solarized 
 " Ignore pep8 80 char limit rule
 let g:pymode_lint_ignore="E501"
+
+" ctags support
+source ~\vimfiles\autotag.vim
