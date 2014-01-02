@@ -88,8 +88,8 @@ set ignorecase
 set smartcase
 
 " disable swap files
-set backupdir=c:/temp
-set directory=c:/temp
+set backupdir=/tmp
+set directory=/tmp
 
 " setup pathogen to manage your plugins
 filetype off
@@ -112,7 +112,7 @@ let g:pymode_syntax = 1
 let g:pymode_syntax_all = 1
 
 " Set gui font
-set guifont=Consolas\ for\ Powerline\ fixedD:h11
+set guifont=Inconsolata\ for\ Powerline\ Medium\ 12
 
 " Encoding
 set encoding=utf-8
@@ -138,8 +138,7 @@ vnoremap <a-k> :m-2<cr>gv
 " colorscheme
 set t_co=256
 color solarized 
+set background=dark
 " Ignore pep8 80 char limit rule
 let g:pymode_lint_ignore="E501"
 
-" ctags support
-source ~\vimfiles\autotag.vim
