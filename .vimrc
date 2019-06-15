@@ -33,7 +33,8 @@ vnoremap < <gv
 vnoremap > >gv
 
 " map ;; to : in normal mode to save pressing shift
-nmap ;; :
+inoremap ;' <esc>
+vnoremap ;' <esc>
 
 " resize splits when window is resized
 au vimresized * exe "normal! \<c-w>="
